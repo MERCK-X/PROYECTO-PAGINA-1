@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="alertify/css/alertify.min.css">
+    <script src="alertify/alertify.min.js"></script>
+    
+    <script type="text/javascript" src="JS/JQuery.js"></script>
+</head>
+
+<body class="w3-light-grey">
+
+<header class="w3-container w3-teal">
+    <nav class="w3-bar">
+        <a href="Inicio2.html" class="w3-bar-item w3-button">Inicio</a>
+        <a href="registroadmin.html"  class="w3-bar-item w3-button" >Registrar nuevo Administrador</a>
+     </nav>
+    <div class="w3-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+</header>
+
+<label id="m"></label>
+
+<div class="background"></div>
+<section class="home">
+    <div class="w3-container">
+        <h2>Inicia Sesion</h2>
+    </div>
+
+    <div class="w3-container w3-card-4 w3-padding-large">
+        <div class="input-container">
+            <input id="e" class="w3-input" type="text" name="usuario" placeholder="Usuario">
+        </div>
+        <div class="input-container">
+            <input id="co" class="w3-input" type="text" name="correo" placeholder="Correo Electrónico">
+        </div>
+        <div class="input-container">
+            <input id="c" class="w3-input" type="password" name="contrasenia" placeholder="Contraseña" autocomplete="new-password">
+        </div>
+        <div class="button-container">
+            <button id="enviar" class="w3-button w3-teal">Ingresar</button>
+            <br><br>
+        </div>
+      
+        <div class="sing-up">
+             <a href="registroadmin.html" class="w3-text-white">Regístrate como Administrador</a>
+        </div>
+    </div>
+</section>
+
+<script>
+
+
+    $(document).ready(function() {
+        // Al cargar la página, deshabilita el botón de ingresar
+        $('#enviar').prop('disabled', true);
+
+        // Cuando se cambia el contenido de los campos de entrada
+        $('input').on('input', function() {
+            // Verifica si todos los campos están vacíos
+            var todosVacios = $('input').filter(function() {
+                return $.trim($(this).val()) === '';
+            }).length === $('input').length;
+
+            // Si todos los campos están vacíos, deshabilita el botón de ingresar, de lo contrario, habilítalo
+            $('#enviar').prop('disabled', todosVacios);
+        });
+
+        // Manejo del clic en el botón de ingresar
+        $("#enviar").click(function() {
+            var e = $("#e").val();
+            var co = $("#co").val();
+            var c = $("#c").val();
+            $.post("valida2.php", { usuario: e, correo: co, contrasenia: c }, function(resp) {
+
+                $("#m").html(resp);
+                if (resp == "") {
+                    location.href = "iniciado2.php";
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

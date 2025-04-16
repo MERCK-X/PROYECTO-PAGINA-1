@@ -1,0 +1,83 @@
+[
+  {
+    "_id": { "$oid": "648b9798c88aa219387e8ca2" },
+    "correo": "programador_isc@itesa.edu.mx",
+    "nombre": "Ing. Alan Espinoza Aguirre",
+    "periodos_Inst": {
+      "ENERO-JUNIO-2023": {
+        "1F12": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "1F12",
+          "Materia": "CÁLCULO DIFERENCIAL",
+          "totalTemas": "5",
+          "Semestre": "PRIMERO",
+          "ClaveAsignatura": "ACF0901"
+        },
+        "1G21": {
+          "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "1G21",
+          "Materia": "CÁLCULO DIFERENCIAL",
+          "totalTemas": "5",
+          "Semestre": "PRIMERO",
+          "ClaveAsignatura": "ACF0901"
+        },
+        "7F31": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "7F31",
+          "Materia": "PROGAMACIÓN LÓGICA Y FUNCIONAL",
+          "totalTemas": "4",
+          "Semestre": "SÉPTIMO",
+          "ClaveAsignatura": "SCC1019"
+        },
+        "3F21": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "3F21",
+          "Materia": "ESTRUCTURA DE DATOS",
+          "totalTemas": "6",
+          "Semestre": "TERCERO",
+          "ClaveAsignatura": "AED1026"
+        },
+        "7F41": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "7F41",
+          "Materia": "GESTIÓN DE PROYECTOS DE SOFTWARE",
+          "totalTemas": "5",
+          "Semestre": "SÉPTIMO",
+          "ClaveAsignatura": "SCG1009"
+        },
+        "7F42": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "7F42",
+          "Materia": "GESTIÓN DE PROYECTOS DE SOFTWARE",
+          "totalTemas": "5",
+          "Semestre": "SÉPTIMO",
+          "ClaveAsignatura": "SCG1009"
+        },
+        "7F43": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "7F43",
+          "Materia": "GESTIÓN DE PROYECTOS DE SOFTWARE",
+          "totalTemas": "5",
+          "Semestre": "SÉPTIMO",
+          "ClaveAsignatura": "SCG1009"
+        },
+        "6F51": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "6F51",
+          "Materia": "INGENIERÍA DE SOFTWARE",
+          "totalTemas": "4",
+          "Semestre": "SEXTO",
+          "ClaveAsignatura": "SCD1011"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "_id": { "$oid": "648bae8c01aacd01e146f4b2" },
+    "correo": "eruiz@itesa.edu.mx",
+    "nombre": "D. C. C. ELIAS RUIZ HERNANDEZ",
+    "periodos_Inst": {
+      "ENERO-JUNIO-2023": {
+        "7F11": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "7F11",
+          "Materia": "LENGUAJES Y AUTOMATAS II",
+          "totalTemas": "4",
+          "Semestre": "SÉPTIMO",
+          "ClaveAsignatura": "SCD1016"
+        },
+        "4F31": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "4F31",
+          "Materia": "TÓPICOS AVANZADOS DE PROGRAMACIÓN",
+          "totalTemas": "5",
+          "Semestre": "CUARTO",
+          "ClaveAsignatura": "SCD1027"
+        },
+        "6F11": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "6F11",
+          "Materia": "LENGUAJES Y AUTOMATAS I",
+          "totalTemas": "6",
+          "Semestre": "SEXTO",
+          "ClaveAsignatura": "SCD1015"
+        },
+        "4U51": {
+          "Carrera": "INGENIERÍA EN SISTEMAS AUTOMOTRICES",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "4U51",
+          "Materia": "MECÁNICA DE FLUIDOS",
+          "totalTemas": "5",
+          "Semestre": "CUARTO",
+          "ClaveAsignatura": "SAE1323"
+        }
+      },
+      "JULIO-DICIEMBRE-2023": {
+        "7F11": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "7F11",
+          "Materia": "LENGUAJES Y AUTOMATAS II",
+          "totalTemas": "4",
+          "Semestre": "SÉPTIMO",
+          "ClaveAsignatura": "SCD1016"
+        },
+        "5F41": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "5F41",
+          "Materia": "SIMULACIÓN",
+          "totalTemas": "5",
+          "Semestre": "QUINTO",
+          "ClaveAsignatura": "SCD1022"
+        },
+        "4U51": {
+          "Carrera": "INGENIERÍA EN SISTEMAS AUTOMOTRICES",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "4U51",
+          "Materia": "MECÁNICA DE FLUIDOS",
+          "totalTemas": "5",
+          "Semestre": "CUARTO",
+          "ClaveAsignatura": "SAE1323"
+        }
+      },
+      "ENERO-JUNIO-2024": {
+        "4F31": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "4F31",
+          "Materia": "TÓPICOS AVANZADOS DE PROGRAMACIÓN",
+          "totalTemas": "5",
+          "Semestre": "CUARTO",
+          "ClaveAsignatura": "SCD1027"
+        },
+        "6F11": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "6F11",
+          "Materia": "LENGUAJES Y AUTOMATAS I",
+          "totalTemas": "6",
+          "Semestre": "SEXTO",
+          "ClaveAsignatura": "SCD1015"
+        }
+      }
+    }
+  }
+
+]

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="alertify/css/alertify.min.css">
+    <script src="alertify/alertify.min.js"></script>
+
+    
+    <script type="text/javascript" src="JS/JQuery.js"></script>
+</head>
+
+<body class="w3-light-grey">
+
+<header class="w3-container w3-teal">
+    <nav class="w3-bar">
+        <a href="Inicio2.html" class="w3-bar-item w3-button">Inicio</a>
+        <a href="Registro.html" class="w3-bar-item w3-button">Registrar</a>
+    </nav>
+    <div class="w3-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+</header>
+
+<label id="m"></label>
+
+<div class="background"></div>
+<section class="home">
+    <div class="w3-container">
+        <h2>Inicia Sesion</h2>
+    </div>
+
+    <div class="w3-container w3-card-4 w3-padding-large">
+        <div class="input-container">
+            <input id="e" class="w3-input" type="text" name="usuario" placeholder="Usuario">
+        </div>
+        <div class="input-container">
+            <input id="co" class="w3-input" type="text" name="correo" placeholder="Correo Electrónico">
+        </div>
+        <div class="input-container">
+            <input id="c" class="w3-input" type="password" name="contrasenia" placeholder="Contraseña" autocomplete="new-password">
+        </div>
+        <div class="button-container">
+            <button type="submit" id="enviar" class="w3-button w3-teal">Ingresar</button>
+            <br><br>
+
+            <button onclick="signInWithGoogle()" name="google_login" id="google" class="w3-button w3-red">Iniciar con Google</button>
+        </div>
+        <div class="sing-up">
+            <a href="login_correo.php" class="w3-text-white">Olvidaste tu contraseña?</a>
+            <p class="w3-text-white"> No tienes cuenta?</p>
+            <a href="Registro.html" class="w3-text-white">Regístrate</a>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    
+</script>
+
+
+<script>
+    // Función para iniciar sesión con Google
+    document.getElementById('google').addEventListener('click', function() 
+    {
+        // URL de redireccionamiento después del inicio de sesión
+        var redirect_uri = 'http://localhost/Proyecto/iniciado.php'; 
+    
+        // URL de autorización de Google
+        var auth_url = 'https://accounts.google.com/o/oauth2/auth' +
+        '?client_id=688901761267-2pkd2297kccpc0qet54gqeue9bb0seun.apps.googleusercontent.com' + 
+        '&redirect_uri=' + encodeURIComponent(redirect_uri) +
+        '&response_type=token' +
+        '&scope=email profile'+ // Cambia o añade ámbitos según tus necesidades
+        '&session_check=true'; // Parámetro adicional para verificar la sesión
+
+        window.location.href = auth_url;
+
+        localStorage.setItem('mostrarMensaje', 'true');
+    });
+
+
+</script>
+
+
+<script>
+    
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        // Al cargar la página, deshabilita el botón de ingresar
+        $('#enviar').prop('disabled', true);
+
+        // Cuando se cambia el contenido de los campos de entrada
+        $('input').on('input', function() {
+            // Verifica si todos los campos están vacíos
+            var todosVacios = $('input').filter(function() {
+                return $.trim($(this).val()) === '';
+            }).length === $('input').length;
+
+            // Si todos los campos están vacíos, deshabilita el botón de ingresar, de lo contrario, habilítalo
+            $('#enviar').prop('disabled', todosVacios);
+        });
+
+        // Manejo del clic en el botón de ingresar
+        $("#enviar").click(function() {
+            var e = $("#e").val();
+            var co = $("#co").val();
+            var c = $("#c").val();
+            $.post("valida.php", { usuario: e, correo: co, contrasenia: c }, function(resp) {
+            
+                $("#m").html(resp);
+                if (resp == "") 
+                {
+                    localStorage.setItem('mostrarMensaje', 'true');
+
+                    var a = 'entro';
+                    history.pushState({},'',"iniciado.html?"+a);
+
+                    location.href = "iniciado.php";
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
+

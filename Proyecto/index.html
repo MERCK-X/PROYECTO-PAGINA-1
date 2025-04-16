@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONGO - Consulta de Datos</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .nav {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    text-align: left;
+    background-color: #333; 
+    border-radius: 10px;
+    color: #fff;
+}
+
+.nav a {
+    display: inline-block;    
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav a:hover {
+    border-bottom: 4px solid #fff;
+    transition: .3s;
+}
+
+/* Estilos específicos para el botón de cerrar sesión */
+#cerrar-sesion {
+    margin-right: 20px; /* Espacio a la derecha para el icono */
+}
+
+/* Agrega estilos al icono de cerrar sesión */
+#cerrar-sesion i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: calc(100% - 80px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #2f353b;
+            color: #fff;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        .subtable {
+            margin-top: 10px;
+        }
+
+        .subtable th {
+            background-color: #252a2e;
+            color: #fff;
+        }
+
+        .subtable td {
+            background-color: #f9f9f9;
+        }
+
+        /* Estilos para el segundo menú */
+.menu2 {
+    background-color: #666; /* Cambia el color de fondo según sea necesario */
+    color: #fff;
+    padding: 10px 20px; /* Ajusta el espaciado según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.menu2 a {
+    display: inline-block;    
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu2 a:hover {
+    border-bottom: 4px solid #fff;
+    transition: .3s;
+}
+
+
+    </style>
+    
+</head>
+<body>
+
+
+    <nav class="nav">
+        <!-- Tus elementos de menú existentes -->
+        <a href="#"></a>
+        <a href="#"></a>
+        <!-- Elemento de menú para cerrar sesión -->
+        <a href="#" id="cerrar-sesion" onclick="cerrarsesion()"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+    </nav>
+    
+
+    <br><br>
+
+    <br>
+    <br>
+
+
+<nav class="menu2">
+    <a href="#" id="profesores">Profesores</a>
+    <a href="#" >Búsqueda</a>
+    <a href="#">Opción 3</a>
+</nav>
+
+
+
+
+    <div class="container">
+        <h1 style="text-align: center;">Consulta de Datos</h1>
+        <div style="margin-bottom: 20px;">
+            <label for="nombrep">Ingrese el correo o nombre del docente a buscar</label>
+            <input type="text" id="nombrep">
+
+            <button id="buscar">Buscar</button>
+            <button id="buscarNombresCorreos">Buscar nombres</button>
+        </div>
+
+        <button id="consultodo">Consultar todo</button>
+
+        <button id="borrar">Limpiar</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="JS/Jquery.js"></script>
+    
+    <script>
+        
+        $("#buscar").click(function() 
+        {
+            var nombre = $("#nombrep").val(); 
+            var parametros = 
+            {
+                "accion": "buscarpornombre", 
+                "nombre": nombre 
+            };
+
+            var parametros2 = 
+            {
+                "accion": "buscarporcorreo", 
+                "correo": nombre 
+            };
+
+            if (nombre.includes("@")) 
+            {
+                $.post("conexion/consultasNoSQL.php", parametros2, function(resp) 
+                {
+                    let resultado2 = JSON.parse(resp);
+                    if (resultado2 == "no") 
+                    {
+                        alert("No se encontró el correo especificado");
+                    } 
+                    else 
+                    {
+                        construirTablas(resultado2);
+                    }
+                });
+            } 
+            else 
+            {
+                $.post("conexion/consultasNoSQL.php", parametros, function(resp) 
+                {
+                    let resultado = JSON.parse(resp);
+                    if (resultado == "no") 
+                    {
+                        alert("No se encontró el nombre especificado");
+                    } 
+                    else 
+                    {
+                        construirTablas(resultado);
+                    }
+                });
+            }   
+        });
+
+
+    function construirTablas(resultado) 
+    {
+        var rr = '';
+        for (const d in resultado) 
+        {
+            var nombre = resultado[d]["nombre"];
+            var correo = resultado[d]["correo"];
+            var periodosInst = resultado[d]["periodos_Inst"];
+            var periodosHTML = '';
+
+            for (const periodo in periodosInst) {
+                if (periodosInst.hasOwnProperty(periodo)) {
+                    var periodos = periodosInst[periodo];
+                    periodosHTML += '<tr><td colspan="6" style="background-color: #007bff; color: #fff;">Periodo: ' + periodo + '</td></tr>';
+                    for (const grupo in periodos) {
+                        if (periodos.hasOwnProperty(grupo)) {
+                            var datos = periodos[grupo];
+                            periodosHTML += '<tr>';
+                            periodosHTML += '<td>' + grupo + '</td>';
+                            periodosHTML += '<td>' + datos["Carrera"] + '</td>';
+                            periodosHTML += '<td>' + datos["Materia"] + '</td>';
+                            periodosHTML += '<td>' + datos["totalTemas"] + '</td>';
+                            periodosHTML += '<td>' + datos["Semestre"] + '</td>';
+                            periodosHTML += '<td>' + datos["ClaveAsignatura"] + '</td>';
+                            periodosHTML += '</tr>';
+                        }
+                    }
+                }
+            }
+            rr += '<h2>' + nombre + '</h2>';
+            rr += '<h3>' + correo + '</h3>';
+            rr += '<table>';
+            rr += '<tr><th>Grupo</th><th>Carrera</th><th>Materia</th><th>Total Temas</th><th>Semestre</th><th>Clave Asignatura</th></tr>';
+            rr += periodosHTML;
+            rr += '</table>';
+        }
+
+        $("#resultado").html(rr);
+    }
+
+
+
+        $("#consultodo").click(function() {
+            var parametros = {
+                "accion": "consultodo"
+            };
+
+            $.post("conexion/consultasNoSQL.php", parametros, function(resp) {
+                //alert(resp);
+                let r = JSON.parse(resp);
+                var rr = '';
+
+                for (const d in r) {
+                    var nombre = r[d]["nombre"];
+                    var correo = r[d]["correo"];
+                    var periodosInst = r[d]["periodos_Inst"];
+                    var periodosHTML = '';
+
+                    for (const periodo in periodosInst) {
+                        if (periodosInst.hasOwnProperty(periodo)) 
+                        {
+                            var periodos = periodosInst[periodo];
+                            periodosHTML += '<tr><td colspan="6" style="background-color: #007bff; color: #fff;">Periodo: ' + periodo + '</td></tr>';
+                            for (const grupo in periodos) {
+                                if (periodos.hasOwnProperty(grupo)) {
+                                    var datos = periodos[grupo];
+                                    periodosHTML += '<tr>';
+                                    periodosHTML += '<td>' + grupo + '</td>';
+                                    periodosHTML += '<td>' + datos["Carrera"] + '</td>';
+                                    periodosHTML += '<td>' + datos["Materia"] + '</td>';
+                                    periodosHTML += '<td>' + datos["totalTemas"] + '</td>';
+                                    periodosHTML += '<td>' + datos["Semestre"] + '</td>';
+                                    periodosHTML += '<td>' + datos["ClaveAsignatura"] + '</td>';
+                                    periodosHTML += '</tr>';
+                                }
+                            }
+                        }
+                    }
+
+                    rr += '<h2>' + nombre + '</h2>';
+                    rr += '<h3>' + correo + '</h3>';
+                    rr += '<table>';
+                    rr += '<tr><th>Grupo</th><th>Carrera</th><th>Materia</th><th>Total Temas</th><th>Semestre</th><th>Clave Asignatura</th></tr>';
+                    rr += periodosHTML;
+                    rr += '</table>';
+                }
+
+                $("#resultado").html(rr);
+            });
+        });
+
+        //-----------------------------------------------------------------------------
+        $("#buscarNombresCorreos").click(function() 
+        {
+            var parametros = {
+                "accion": "consultodo"
+            };
+
+            $.post("conexion/consultasNoSQL.php", parametros, function(resp) 
+            {
+                let r = JSON.parse(resp);
+                var rr = '<div>';
+
+                for (const d in r) 
+                {
+                    rr += '<div><table border-collapse: collapse><tbody>';
+                    rr += '<tr><td>Nombre</td><td><label>' + r[d]["nombre"] + '</label></td></tr>';
+                    rr += '<tr><td>Correo</td><td>' + r[d]["correo"] + '</td></tr>';
+                    rr += '</tbody></table><br><br></div>';
+                }
+
+                rr += "</div>";
+                $("#resultado").html(rr);
+            });
+        });
+
+    // Obtener el botón y el div de resultado
+    var botonLimpiar = document.getElementById('borrar');
+    var divResultado = document.getElementById('resultado');
+
+    // Agregar evento de clic al botón
+    botonLimpiar.addEventListener('click', function() {
+      // Limpiar el contenido del div resultado
+      divResultado.innerHTML = '';
+    });
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

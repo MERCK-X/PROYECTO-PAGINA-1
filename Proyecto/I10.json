@@ -1,0 +1,85 @@
+[
+    {
+        "_id": { "$oid": "64a57bb88c2d4b27a213fdb2" },
+        "correo": "mjimenez@itesa.edu.mx",
+        "nombre": "M.A.C. MÓNICA JIMENEZ GUTIERREZ",
+        "periodos_Inst": {
+          "JULIO-DICIEMBRE-2023": {
+            "3F31": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "3F31",
+              "Materia": "CULTURA EMPRESARIAL",
+              "totalTemas": "5",
+              "Semestre": "TERCERO",
+              "ClaveAsignatura": "SCC1005"
+            },
+            "1F31": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "1F31",
+              "Materia": "TALLER DE ÉTICA",
+              "totalTemas": "4",
+              "Semestre": "PRIMERO",
+              "ClaveAsignatura": "ACA0907"
+            },
+            "7F81": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "7F81",
+              "Materia": "TALLER DE INVESTIGACIÓN II",
+              "totalTemas": "3",
+              "Semestre": "SÉPTIMO",
+              "ClaveAsignatura": "ACA0910"
+            },
+            "1F51": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "1F51",
+              "Materia": "TALLER DE ADMINISTRACIÓN",
+              "totalTemas": "6",
+              "Semestre": "PRIMERO",
+              "ClaveAsignatura": "SCH1024"
+            }
+          },
+          "ENERO-JUNIO-2024": {
+            "2F31": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "2F31",
+              "Materia": "CONTABILIDAD FINANCIERA",
+              "totalTemas": "5",
+              "Semestre": "SEGUNDO",
+              "ClaveAsignatura": "AEC1008"
+            },
+            "2H61": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "2H61",
+              "Materia": "ADMINISTRACIÓN Y CONTABILIDAD",
+              "totalTemas": "4",
+              "Semestre": "SEGUNDO",
+              "ClaveAsignatura": "ACA0909"
+            },
+            "6F81": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "6F81",
+              "Materia": "TALLER DE INVESTIGACIÓN I",
+              "totalTemas": "3",
+              "Semestre": "SEXTO",
+              "ClaveAsignatura": "ACA0909"
+            },
+            "2F32": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "2F32",
+              "Materia": "CONTABILIDAD FINANCIERA",
+              "totalTemas": "5",
+              "Semestre": "SEGUNDO",
+              "ClaveAsignatura": "AEC1008"
+            }
+          }
+        }
+      }
+]

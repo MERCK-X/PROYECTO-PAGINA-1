@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profesores y Materias</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <script src="JS/JQuery.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="container mt-5">
+    <h2>Información de Profesor</h2>
+    <div id="profesorInfo"></div>
+</div>
+
+
+<script>
+    
+$(document).ready(function() {
+    $.getJSON("I1.json", function(data) {
+        var contenidoHTML = '';
+        $.each(data, function(index, profesor) {
+            // Procesa y muestra la información existente
+            contenidoHTML += '<div class="profesor-info">';
+            contenidoHTML += '<h3>' + profesor.nombre + '</h3>';
+            contenidoHTML += '<p><strong>Correo:</strong> ' + profesor.correo + '</p>';
+
+            $.each(profesor.periodos_Inst, function(periodo, grupos) {
+                contenidoHTML += '<div><strong>Periodo:</strong> ' + periodo + '</div>';
+                $.each(grupos, function(idGrupo, infoGrupo) {
+                    contenidoHTML += '<div class="grupo-info">';
+                    contenidoHTML += '<h3>' + idGrupo + '</h3>';
+                    contenidoHTML += '<div class="materia-info">';
+                    contenidoHTML += '<p><strong>Carrera:</strong> ' + infoGrupo.Carrera + '</p>';
+                    contenidoHTML += '<p><strong>Materia:</strong> ' + infoGrupo.Materia + '</p>';
+                    contenidoHTML += '<p><strong>Semestre:</strong> ' + infoGrupo.Semestre + '</p>';
+                    contenidoHTML += '<p><strong>Clave Asignatura:</strong> ' + infoGrupo.ClaveAsignatura + '</p>';
+                    contenidoHTML += '<p><strong>Total Temas:</strong> ' + infoGrupo.totalTemas + '</p>';
+                    contenidoHTML += '</div>'; 
+                    contenidoHTML += '</div>'; 
+                });
+            });
+
+            contenidoHTML += '</div>'; 
+        });
+
+
+        contenidoHTML += '<div class="profesor-info">';
+        contenidoHTML += '<h3>Alan Espinozq Aguirre</h3>';
+        contenidoHTML += '<p><strong>Correo:</strong> 18030290@itesa.edu.mx</p>';
+        contenidoHTML += '</div>';
+
+        $('#profesorInfo').html(contenidoHTML);
+    });
+});
+
+</script>
+
+
+
+
+<style>
+
+/* estilos.css */
+.profesor-info {
+    margin-bottom: 20px;
+}
+
+.grupo-info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.grupo-info h3 {
+    font-size: 18px;
+}
+
+.materia-info {
+    margin-left: 20px;
+}    
+
+</style>
+
+
+
+</body>
+</html>

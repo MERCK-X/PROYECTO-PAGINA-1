@@ -1,0 +1,192 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /
+}
+
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.nav {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    text-align: left;
+    background-color: #333; 
+    border-radius: 10px;
+    color: #fff;
+}
+
+.nav a {
+    display: inline-block;    
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav a:hover {
+    border-bottom: 4px solid #fff;
+    transition: .3s;
+}
+
+/* Estilos específicos para el botón de cerrar sesión */
+#cerrar-sesion {
+    margin-right: 20px; /* Espacio a la derecha para el icono */
+}
+
+/* Agrega estilos al icono de cerrar sesión */
+#cerrar-sesion i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+
+aside {
+    width: 180px;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    float: left;
+    background-color: #f0f0f0;
+}
+
+
+
+
+/* sjdakd s*/
+
+/* Estilos para el segundo menú */
+.menu2 {
+    background-color: #666; /* Cambia el color de fondo según sea necesario */
+    color: #fff;
+    padding: 10px 20px; /* Ajusta el espaciado según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.menu2 a {
+    display: inline-block;    
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu2 a:hover {
+    border-bottom: 4px solid #fff;
+    transition: .3s;
+}
+
+
+/* Estilo básico para el aside */
+aside {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: absolute;
+    top: 110px; /* Altura del menú + cualquier margen adicional */
+    left: -220px; /* Posición inicial fuera de la pantalla */
+    transition: left 0.3s ease;
+    z-index: 1000; /* Ajusta el índice z para que esté por encima del resto del contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega sombra para mayor profundidad */
+}
+
+/* Estilos para el enlace de profesores */
+.menu2 #profesores {
+    cursor: pointer;
+}
+
+
+/*Estilos*/
+
+.contenido {
+    width: 70%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+}
+
+.profesor-info {
+    text-align: left; /* Alinea el texto a la izquierda */
+    max-width: 700px; /* Establece un ancho máximo para el contenido del profesor */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+
+.grupo-info {
+    background-color: #bbb7b7; /* Color de fondo */
+    padding: 10px; /* Espacio interno */
+    margin-top: 10px; /* Espacio superior */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #050505; /* Borde con color gris */
+}
+
+/* Estilos para el título de cada grupo */
+.grupo-info h3 {
+    font-size: 18px; /* Tamaño de fuente del título */
+}
+
+/* Estilos adicionales para la información de la materia */
+.materia-info {
+    margin-left: 20px; /* Espacio izquierdo */
+}
+
+
+/* Estilos para los elementos <li> dentro del aside */
+#opcionesProfesores ul li {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin-bottom: 10px; /* Espacio entre cada elemento <li> */
+}
+
+/* Estilos para los enlaces dentro de los elementos <li> */
+#opcionesProfesores ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
+    padding: 5px; /* Añade espaciado interno */
+    background-color: #f0f0f0; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para los enlaces cuando se les pasa el mouse */
+#opcionesProfesores ul li a:hover {
+    background-color: #ccc; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+#generarPDF {
+    position: absolute; /* Establece la posición absoluta */
+    top: 120px; /* Distancia desde la parte superior */
+    left: 1000px; /* Distancia desde la izquierda */
+    padding: 10px 20px; /* Espacio interno */
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+
+
+/*Tablas*/
+
+/* Estilos para el formulario */
+

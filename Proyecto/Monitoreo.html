@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <script src="JS/JQuery.js"></script>
+    <link rel="stylesheet" href="estilostodo.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h3>Monitoreo profesores</h3>
+    </header>
+
+    <nav>
+        <button p1="Ing. Alan Espinoza Aguirre">Ing. Alan Espinoza Aguirre</button>
+        <button p2="D. C. C. ELIAS RUIZ HERNANDEZ">D. C. C. ELIAS RUIZ HERNANDEZ</button>
+        <button p3="LIC. RUBICEL HERVER GOMEZ">LIC. RUBICEL HERVER GOMEZ</button>
+
+
+        <button id="eliminar">Limpiar</button>
+    </nav>
+
+<div class="contenido"></div>
+
+<script>
+
+$(document).ready(function() {
+        $('button[p1]').click(function() {
+            var profesorNombre = $(this).attr('p1'); 
+
+            $.getJSON("I1.json", function(data) {
+                var contenidoHTML = '';
+
+                var profesor = data.find(p => p.nombre === profesorNombre);
+                if (profesor) {
+                    contenidoHTML += '<div class="profesor-info">';
+                    contenidoHTML += '<h3>' + profesor.nombre + '</h3>';
+                    contenidoHTML += '<p><strong>Correo:</strong> ' + profesor.correo + '</p>';
+
+                    $.each(profesor.periodos_Inst, function(periodo, grupos) {
+                        contenidoHTML += '<div><strong>Periodo:</strong> ' + periodo + '</div>';
+
+                        $.each(grupos, function(idGrupo, infoGrupo) {
+                            contenidoHTML += '<div class="grupo-info">';
+                            contenidoHTML += '<h4>Grupo: ' + idGrupo + '</h4>';
+                            contenidoHTML += '<p><strong>Carrera:</strong> ' + infoGrupo.Carrera + '</p>';
+                            contenidoHTML += '<p><strong>Materia:</strong> ' + infoGrupo.Materia + '</p>';
+                            contenidoHTML += '<p><strong>Semestre:</strong> ' + infoGrupo.Semestre + '</p>';
+                            contenidoHTML += '<p><strong>Clave Asignatura:</strong> ' + infoGrupo.ClaveAsignatura + '</p>';
+                            contenidoHTML += '<p><strong>Total Temas:</strong> ' + infoGrupo.totalTemas + '</p>';
+                            contenidoHTML += '</div>';
+                        });
+                    });
+
+                    contenidoHTML += '</div>';
+                }
+
+                $('.contenido').html(contenidoHTML);
+            });
+        });
+
+    });
+
+$(document).ready(function() {
+    $('button[p2]').click(function() {
+        var profesorNombre = $(this).attr('p2'); 
+
+        $.getJSON("I2.json", function(data) {
+            var contenidoHTML = '';
+
+            var profesor = data.find(p => p.nombre === profesorNombre);
+            if (profesor) {
+                contenidoHTML += '<div class="profesor-info">';
+                contenidoHTML += '<h3>' + profesor.nombre + '</h3>';
+                contenidoHTML += '<p><strong>Correo:</strong> ' + profesor.correo + '</p>';
+
+                $.each(profesor.periodos_Inst, function(periodo, grupos) {
+                    contenidoHTML += '<div><strong>Periodo:</strong> ' + periodo + '</div>';
+
+                    $.each(grupos, function(idGrupo, infoGrupo) {
+                        contenidoHTML += '<div class="grupo-info">';
+                        contenidoHTML += '<h4>Grupo: ' + idGrupo + '</h4>';
+                        contenidoHTML += '<p><strong>Carrera:</strong> ' + infoGrupo.Carrera + '</p>';
+                        contenidoHTML += '<p><strong>Materia:</strong> ' + infoGrupo.Materia + '</p>';
+                        contenidoHTML += '<p><strong>Semestre:</strong> ' + infoGrupo.Semestre + '</p>';
+                        contenidoHTML += '<p><strong>Clave Asignatura:</strong> ' + infoGrupo.ClaveAsignatura + '</p>';
+                        contenidoHTML += '<p><strong>Total Temas:</strong> ' + infoGrupo.totalTemas + '</p>';
+                        contenidoHTML += '</div>';
+                    });
+                });
+
+                contenidoHTML += '</div>';
+            }
+
+            $('.contenido').html(contenidoHTML);
+        });
+    });
+});
+
+$(document).ready(function() {
+    $('button[p3]').click(function() {
+        var profesorNombre = $(this).attr('p3'); 
+
+        $.getJSON("I3.json", function(data) {
+            var contenidoHTML = '';
+
+            var profesor = data.find(p => p.nombre === profesorNombre);
+            if (profesor) {
+                contenidoHTML += '<div class="profesor-info">';
+                contenidoHTML += '<h3>' + profesor.nombre + '</h3>';
+                contenidoHTML += '<p><strong>Correo:</strong> ' + profesor.correo + '</p>';
+
+                $.each(profesor.periodos_Inst, function(periodo, grupos) {
+                    contenidoHTML += '<div><strong>Periodo:</strong> ' + periodo + '</div>';
+
+                    $.each(grupos, function(idGrupo, infoGrupo) {
+                        contenidoHTML += '<div class="grupo-info">';
+                        contenidoHTML += '<h4>Grupo: ' + idGrupo + '</h4>';
+                        contenidoHTML += '<p><strong>Carrera:</strong> ' + infoGrupo.Carrera + '</p>';
+                        contenidoHTML += '<p><strong>Materia:</strong> ' + infoGrupo.Materia + '</p>';
+                        contenidoHTML += '<p><strong>Semestre:</strong> ' + infoGrupo.Semestre + '</p>';
+                        contenidoHTML += '<p><strong>Clave Asignatura:</strong> ' + infoGrupo.ClaveAsignatura + '</p>';
+                        contenidoHTML += '<p><strong>Total Temas:</strong> ' + infoGrupo.totalTemas + '</p>';
+                        contenidoHTML += '</div>';
+                    });
+                });
+
+                contenidoHTML += '</div>';
+            }
+
+            $('.contenido').html(contenidoHTML);
+        });
+    });
+});
+
+$(document).ready(function() {
+    $('#eliminar').click(function() {
+        $('.contenido').html('');
+    });
+});
+
+</script>
+
+</body>
+</html>

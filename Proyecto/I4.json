@@ -1,0 +1,112 @@
+[
+  {
+    "_id": { "$oid": "649aec1a37e09f58415d7442" },
+    "correo": "mcruz@itesa.edu.mx",
+    "nombre": "M. T. I. JOSÉ MARTÍN CRUZ DOMÍNGUEZ",
+    "periodos_Inst": {
+      "JULIO-DICIEMBRE-2023": {
+        "5F21": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "5F21",
+          "Materia": "FUNDAMENTOS DE TELECOMUNICACIONES",
+          "totalTemas": "5",
+          "Semestre": "QUINTO",
+          "ClaveAsignatura": "AEC1034"
+        },
+        "7F21": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "7F21",
+          "Materia": "CONMUTACIÓN Y ENRUTAMIENTO DE REDES DE DATOS",
+          "totalTemas": "4",
+          "Semestre": "SÉPTIMO",
+          "ClaveAsignatura": "SCD1004"
+        },
+        "1F43": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "1F43",
+          "Materia": "MATEMÁTICAS DISCRETAS",
+          "totalTemas": "6",
+          "Semestre": "PRIMERO",
+          "ClaveAsignatura": "AEF1041"
+        },
+        "3F11": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "3F11",
+          "Materia": "CÁLCULO VECTORIAL",
+          "totalTemas": "5",
+          "Semestre": "TERCERO",
+          "ClaveAsignatura": "ACF0904"
+        },
+        "3F12": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "3F12",
+          "Materia": "CÁLCULO VECTORIAL",
+          "totalTemas": "5",
+          "Semestre": "TERCERO",
+          "ClaveAsignatura": "ACF0904"
+        }
+      },
+      "ENERO-JUNIO-2024": {
+        "6F21": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "6F21",
+          "Materia": "REDES DE COMPUTADORAS",
+          "totalTemas": "5",
+          "Semestre": "SEXTO",
+          "ClaveAsignatura": "SCD1021"
+        },
+        "7F21": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "7F21",
+          "Materia": "CONMUTACIÓN Y ENRUTAMIENTO DE REDES DE DATOS",
+          "totalTemas": "4",
+          "Semestre": "SÉPTIMO",
+          "ClaveAsignatura": "SCD1004"
+        },
+        "4F11": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "4F11",
+          "Materia": "ECUACIONES DIFERENCIALES",
+          "totalTemas": "5",
+          "Semestre": "CUARTO",
+          "ClaveAsignatura": "ACF0905"
+        },
+        "4F12": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "4F12",
+          "Materia": "ECUACIONES DIFERENCIALES",
+          "totalTemas": "5",
+          "Semestre": "CUARTO",
+          "ClaveAsignatura": "ACF0905"
+        },
+        "2F11": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "2F11",
+          "Materia": "CÁLCULO INTEGRAL",
+          "totalTemas": "4",
+          "Semestre": "SEGUNDO",
+          "ClaveAsignatura": "ACF0902"
+        },
+        "8F21": {
+          "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "8F21",
+          "Materia": "ADMINISTRACIÓN DE REDES",
+          "totalTemas": "4",
+          "Semestre": "OCTAVO",
+          "ClaveAsignatura": "SCA1002"
+        }
+      }
+    }
+  }
+]

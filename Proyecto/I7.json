@@ -1,0 +1,96 @@
+[
+    {
+        "_id": { "$oid": "64a3133926f2e1434c53a1b2" },
+        "correo": "vrodriguez@itesa.edu.mx",
+        "nombre": "M. EN M. VICTOR RODRIGUEZ MARROQUIN",
+        "periodos_Inst": {
+          "JULIO-DICIEMBRE-2023": {
+            "5H41": {
+              "Carrera": "INGENIERÍA MECATRÓNICA",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "5H41",
+              "Materia": "ANÁLISIS DE FLUIDOS",
+              "totalTemas": "5",
+              "Semestre": "QUINTO",
+              "ClaveAsignatura": "MTC1003"
+            },
+            "5H52": {
+              "Carrera": "INGENIERÍA MECATRÓNICA",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "5H52",
+              "Materia": "ELECTRÓNICA ANALÓGICA",
+              "totalTemas": "5",
+              "Semestre": "QUINTO",
+              "ClaveAsignatura": "MTJ1011"
+            }
+          },
+          "ENERO-JUNIO-2023": {
+            "6H31,6H32": {
+              "Carrera": "INGENIERÍA MECATRÓNICA",
+              "Periodo": "ENERO-JUNIO-2023",
+              "Grupo": "6H31,6H32",
+              "Materia": "DISEÑO DE ELEMENTOS MECÁNICOS",
+              "totalTemas": "5",
+              "Semestre": "SEXTO",
+              "ClaveAsignatura": "MTF1010"
+            },
+            "4H21": {
+              "Carrera": "INGENIERÍA MECATRÓNICA",
+              "Periodo": "ENERO-JUNIO-2023",
+              "Grupo": "4H21",
+              "Materia": "FUNDAMENTOS DE TERMODINÁMICA",
+              "totalTemas": "5",
+              "Semestre": "CUARTO",
+              "ClaveAsignatura": "MTC1017"
+            },
+            "2H41,2H42": {
+              "Carrera": "INGENIERÍA MECATRÓNICA",
+              "Periodo": "ENERO-JUNIO-2023",
+              "Grupo": "2H41,2H42",
+              "Materia": "PROGRAMACIÓN BÁSICA",
+              "totalTemas": "7",
+              "Semestre": "SEGUNDO",
+              "ClaveAsignatura": "MTD1024"
+            }
+          },
+          "ENERO-JUNIO-2024": {
+            "2H41,2H42": {
+              "Carrera": "INGENIERÍA MECATRÓNICA",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "2H41,2H42",
+              "Materia": "PROGRAMACIÓN BÁSICA",
+              "totalTemas": "7",
+              "Semestre": "SEGUNDO",
+              "ClaveAsignatura": "MTD1024"
+            },
+            "4H21": {
+              "Carrera": "INGENIERÍA MECATRÓNICA",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "4H21",
+              "Materia": "FUNDAMENTOS DE TERMODINÁMICA",
+              "totalTemas": "5",
+              "Semestre": "CUARTO",
+              "ClaveAsignatura": "MTC1017"
+            },
+            "6H31,6H32": {
+              "Carrera": "INGENIERÍA MECATRÓNICA",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "6H31,6H32",
+              "Materia": "DISEÑO DE ELEMENTOS MECÁNICOS",
+              "totalTemas": "5",
+              "Semestre": "SEXTO",
+              "ClaveAsignatura": "MTF1010"
+            },
+            "6U41": {
+              "Carrera": "INGENIERÍA EN SISTEMAS AUTOMOTRICES",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "6U41",
+              "Materia": "ELECTRÓNICA DE POTENCIA",
+              "totalTemas": "4",
+              "Semestre": "SEXTO",
+              "ClaveAsignatura": "SAC1313"
+            }
+          }
+        }
+      }  
+]

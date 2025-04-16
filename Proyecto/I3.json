@@ -1,0 +1,77 @@
+[
+  {
+    "_id": { "$oid": "6499eab5907c5e182c699d12" },
+    "correo": "rherver@itesa.edu.mx",
+    "nombre": "LIC. RUBICEL HERVER GOMEZ",
+    "periodos_Inst": {
+      "JULIO-DICIEMBRE-2023": {
+        "2G51,2G52": {
+          "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "2G51,2G52",
+          "Materia": "TALLER DE ÉTICA",
+          "totalTemas": "4",
+          "Semestre": "SEGUNDO",
+          "ClaveAsignatura": "ACA0907"
+        },
+        "1G31,1G32": {
+          "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "1G31,1G32",
+          "Materia": "DESARROLLO HUMANO",
+          "totalTemas": "4",
+          "Semestre": "PRIMERO",
+          "ClaveAsignatura": "GEC0906"
+        },
+        "3G42": {
+          "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "3G42",
+          "Materia": "HABILIDADES DIRECTIVAS I",
+          "totalTemas": "5",
+          "Semestre": "TERCERO",
+          "ClaveAsignatura": "GEC0913"
+        }
+      },
+      "ENERO-JUNIO-2024": {
+        "2G51,2G52": {
+          "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "2G51,2G52",
+          "Materia": "TALLER DE ÉTICA",
+          "totalTemas": "4",
+          "Semestre": "SEGUNDO",
+          "ClaveAsignatura": "ACA0907"
+        },
+        "4G41": {
+          "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "4G41",
+          "Materia": "HABILIDADES DIRECTIVAS II",
+          "totalTemas": "5",
+          "Semestre": "CUARTO",
+          "ClaveAsignatura": "GEC0914"
+        },
+        "6G22": {
+          "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "6G22",
+          "Materia": "EL EMPRENDEDOR Y LA INNOVACIÓN",
+          "totalTemas": "5",
+          "Semestre": "SEXTO",
+          "ClaveAsignatura": "AED1072"
+        },
+        "8GR1,8GR2": {
+          "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "8GR1,8GR2",
+          "Materia": "TALLER DE HABILIDADES BLANDAS",
+          "totalTemas": "6",
+          "Semestre": "OCTAVO",
+          "ClaveAsignatura": "TDB2306"
+        }
+      }
+    }
+  }
+
+] 

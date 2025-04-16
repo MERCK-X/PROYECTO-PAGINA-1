@@ -1,0 +1,113 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;}
+nav {
+    background-color:rgb(187, 238, 238);
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Estilos para el segundo menú */
+.menu2 {
+    background-color: #666; /* Cambia el color de fondo según sea necesario */
+    color: #fff;
+    padding: 10px 20px; /* Ajusta el espaciado según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.menu2 a {
+    display: inline-block;    
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu2 a:hover {
+    border-bottom: 4px solid #fff;
+    transition: .3s;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+#resultado {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+    margin-top: 20px; /* Espacio arriba de la tabla */
+    background-color: #fff; /* Fondo blanco para la tabla */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* Estilos para las celdas de la tabla */
+#resultado th, 
+#resultado td {
+    padding: 8px 12px; /* Espaciado dentro de cada celda */
+    text-align: left; /* Alineación del texto a la izquierda */
+    border-bottom: 1px solid #ccc; /* Línea debajo de cada fila */
+}
+
+/* Estilos para la cabecera de la tabla */
+#resultado th {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para las filas al pasar el mouse */
+#resultado tr:hover {
+    background-color: #f2f2f2; /* Cambio de color de fondo al pasar el mouse */
+}
+
+/* Estilos para los botones dentro de la tabla, si los hay */
+#resultado button {
+    margin: 4px; /* Margen alrededor de los botones */
+    width: auto; /* Ancho automático para ajustarse al texto dentro */
+    background-color: #28a745; /* Verde por defecto */
+}
+
+/* Hover para botones dentro de la tabla */
+#resultado button:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+#tabla-container {
+    margin: 0 auto; /* Esto centra el contenedor de la tabla horizontalmente */
+    width: 80%; /* Ancho del contenedor de la tabla */
+}
+
+

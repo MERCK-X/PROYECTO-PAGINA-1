@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Registro.css">
+
+    <link rel="stylesheet" href="alertify/css/alertify.min.css">
+    <script src="alertify/alertify.min.js"></script>
+    <script src="JS/JQuery.js"></script>
+</head>
+
+<body>
+    <div class="background"></div>
+    <section class="home">
+        <nav class="nav">
+            <a href="Inicio2.html">Inicio</a>
+            <a href="loginadmin.html">Iniciar Sesión como Administrador</a>
+        </nav>
+        <br><br><br><br>
+        <div class="content">
+            <h2>Formulario de Registro</h2>
+            <div class="container">
+                <form id="registroForm">
+                    <div class="form-group">
+                        <input id="n" class="form-control" name="nombre" placeholder="Nombre" >
+                    </div>
+                    <div class="form-group">
+                        <input id="e" class="form-control" name="usuario" placeholder="Usuario"  autocomplete="new-password">
+                    </div>
+                    <div class="form-group">
+                        <input id="co" class="form-control" name="correo" placeholder="Correo Electrónico">
+                    </div>
+                    <div class="form-group">
+                        <input id="c" class="form-control" name="contrasenia" placeholder="Contraseña" autocomplete="new-password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="guardar">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            // Al cargar la página, verifica si los campos están llenos
+            verificarCamposLlenos();
+
+            // Cuando se cambia el contenido de los campos de entrada
+            $('input').on('input', function () {
+                verificarCamposLlenos();
+            });
+        });
+
+        function verificarCamposLlenos() {
+            var todosLlenos = true;
+            var valoresValidos = true;
+
+            // Verifica si todos los campos están llenos y tienen valores válidos
+            $('input').each(function () {
+                if ($(this).val() === '') {
+                    todosLlenos = false;
+                }
+
+                // Aquí puedes agregar más validaciones según tus requisitos
+                // Por ejemplo, validar el formato del correo electrónico
+
+                // Ejemplo de validación de correo electrónico simple
+                if ($(this).attr('type') === 'email' && !isValidEmail($(this).val())) {
+                    valoresValidos = false;
+                }
+            });
+
+            // Si todos los campos están llenos y los valores son válidos, habilita el botón de "Registrar"; de lo contrario, deshabilítalo
+            $('#guardar').prop('disabled', !(todosLlenos && valoresValidos));
+        }
+
+        function isValidEmail(email) {
+            // Expresión regular para validar el formato del correo electrónico
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        $("#registroForm").submit(function (event) {
+            event.preventDefault(); // Evita el envío del formulario por defecto
+
+            alertify.confirm('<h2>¿Estan correctos tus datos?</h2>', function () {
+                // Si el usuario confirma, envía el formulario
+                var n = $("#n").val();
+                var e = $("#e").val();
+                var co = $("#co").val();
+                var c = $("#c").val();
+
+                $.post("guarda2.php", {
+                    nombre: n,
+                    usuario: e,
+                    correo: co,
+                    contrasenia: c
+                }, function (resp) {
+                    alertify.success('<h2>Administrador guardado con éxito</h2>', 10);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

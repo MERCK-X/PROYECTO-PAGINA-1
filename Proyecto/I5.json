@@ -1,0 +1,97 @@
+[
+ {
+    "_id": { "$oid": "64a2f2fd1ddd173ad3056b62" },
+    "correo": "eramirez@itesa.edu.mx",
+    "nombre": "ING. EMMANUEL RAMÍREZ ROMERO",
+    "periodos_Inst": {
+      "JULIO-DICIEMBRE-2023": {
+        "5H11,5H12": {
+          "Carrera": "INGENIERÍA MECATRÓNICA",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "5H11,5H12",
+          "Materia": "DINÁMICA DE SISTEMAS",
+          "totalTemas": "5",
+          "Semestre": "QUINTO",
+          "ClaveAsignatura": "MTF1009"
+        },
+        "8H31": {
+          "Carrera": "INGENIERÍA MECATRÓNICA",
+          "Periodo": "JULIO-DICIEMBRE-2023",
+          "Grupo": "8H31",
+          "Materia": "PROGRAMACIÓN AVANZADA",
+          "totalTemas": "6",
+          "Semestre": "OCTAVO",
+          "ClaveAsignatura": "MTG1023"
+        }
+      },
+      "ENERO-JUNIO-2023": {
+        "8HQ1": {
+          "Carrera": "INGENIERÍA MECATRÓNICA",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "8HQ1",
+          "Materia": "INSTRUMENTACION VIRTUAL Y PROCESAMIENTO DIGITAL",
+          "totalTemas": "5",
+          "Semestre": "OCTAVO",
+          "ClaveAsignatura": "TAD2304"
+        },
+        "8HO1": {
+          "Carrera": "INGENIERÍA MECATRÓNICA",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "8HO1",
+          "Materia": "AUTOMATIZACIÓN DE PROCESOS",
+          "totalTemas": "5",
+          "Semestre": "OCTAVO",
+          "ClaveAsignatura": "TAB2302"
+        },
+        "6H51,6H52": {
+          "Carrera": "INGENIERÍA MECATRÓNICA",
+          "Periodo": "ENERO-JUNIO-2023",
+          "Grupo": "6H51,6H52",
+          "Materia": "ELECTRÓNICA DE POTENCIA APLICADA",
+          "totalTemas": "6",
+          "Semestre": "SEXTO",
+          "ClaveAsignatura": "MTJ1012"
+        }
+      },
+      "ENERO-JUNIO-2024": {
+        "8HO1": {
+          "Carrera": "INGENIERÍA MECATRÓNICA",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "8HO1",
+          "Materia": "AUTOMATIZACIÓN DE PROCESOS",
+          "totalTemas": "5",
+          "Semestre": "OCTAVO",
+          "ClaveAsignatura": "TAB2302"
+        },
+        "8HQ1": {
+          "Carrera": "INGENIERÍA MECATRÓNICA",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "8HQ1",
+          "Materia": "INSTRUMENTACION VIRTUAL Y PROCESAMIENTO DIGITAL",
+          "totalTemas": "5",
+          "Semestre": "OCTAVO",
+          "ClaveAsignatura": "TAD2304"
+        },
+        "6H51,6H52": {
+          "Carrera": "INGENIERÍA MECATRÓNICA",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "6H51,6H52",
+          "Materia": "ELECTRÓNICA DE POTENCIA APLICADA",
+          "totalTemas": "5",
+          "Semestre": "SEXTO",
+          "ClaveAsignatura": "MTJ1012"
+        },
+        "6U42": {
+          "Carrera": "INGENIERÍA EN SISTEMAS AUTOMOTRICES",
+          "Periodo": "ENERO-JUNIO-2024",
+          "Grupo": "6U42",
+          "Materia": "ELECTRÓNICA DE POTENCIA",
+          "totalTemas": "4",
+          "Semestre": "SEXTO",
+          "ClaveAsignatura": "SAC1313"
+        }
+      }
+    }
+  }
+
+]

@@ -1,0 +1,96 @@
+[
+    {
+        "_id": { "$oid": "64a46b90e3b7326c0652a842" },
+        "correo": "hhernandezm@itesa.edu.mx",
+        "nombre": "ING. HECTOR HERNÁNDEZ MENDOZA",
+        "periodos_Inst": {
+          "ENERO-JUNIO-2023": {
+            "1F21": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "ENERO-JUNIO-2023",
+              "Grupo": "1F21",
+              "Materia": "FUNDAMENTOS DE PROGRAMACIÓN",
+              "totalTemas": "5",
+              "Semestre": "PRIMERO",
+              "ClaveAsignatura": "AED1285"
+            }
+          },
+          "JULIO-DICIEMBRE-2023": {
+            "1F21": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "1F21",
+              "Materia": "FUNDAMENTOS DE PROGRAMACIÓN",
+              "totalTemas": "5",
+              "Semestre": "PRIMERO",
+              "ClaveAsignatura": "AED1285"
+            },
+            "1F23": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "1F23",
+              "Materia": "FUNDAMENTOS DE PROGRAMACIÓN",
+              "totalTemas": "5",
+              "Semestre": "PRIMERO",
+              "ClaveAsignatura": "AED1285"
+            },
+            "3F51": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "3F51",
+              "Materia": "SISTEMAS OPERATIVOS",
+              "totalTemas": "6",
+              "Semestre": "TERCERO",
+              "ClaveAsignatura": "AEC1061"
+            },
+            "3F52": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "3F52",
+              "Materia": "SISTEMAS OPERATIVOS",
+              "totalTemas": "6",
+              "Semestre": "TERCERO",
+              "ClaveAsignatura": "AEC1061"
+            }
+          },
+          "ENERO-JUNIO-2024": {
+            "2F21": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "2F21",
+              "Materia": "PROGRAMACIÓN ORIENTADA A OBJETOS",
+              "totalTemas": "6",
+              "Semestre": "SEGUNDO",
+              "ClaveAsignatura": "AED1286"
+            },
+            "4F51": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "4F51",
+              "Materia": "TALLER DE SISTEMAS OPERATIVOS",
+              "totalTemas": "4",
+              "Semestre": "CUARTO",
+              "ClaveAsignatura": "SCA1026"
+            },
+            "4F52": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "4F52",
+              "Materia": "TALLER DE SISTEMAS OPERATIVOS",
+              "totalTemas": "4",
+              "Semestre": "CUARTO",
+              "ClaveAsignatura": "SCA1026"
+            },
+            "7F61": {
+              "Carrera": "INGENIERÍA EN SISTEMAS COMPUTACIONALES",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "7F61",
+              "Materia": "PROGRAMACIÓN WEB",
+              "totalTemas": "5",
+              "Semestre": "SÉPTIMO",
+              "ClaveAsignatura": "AEB1055"
+            }
+          }
+        }
+      }
+]

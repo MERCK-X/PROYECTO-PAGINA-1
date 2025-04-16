@@ -1,0 +1,40 @@
+body {
+
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+nav {
+
+    background-color: #444;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Json */
+.profesor-info {
+    margin-bottom: 20px;
+}
+.grupo-info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.grupo-info h3 {
+    font-size: 18px;
+}
+
+.materia-info {
+    margin-left: 20px;
+}    

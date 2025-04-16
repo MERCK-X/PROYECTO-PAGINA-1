@@ -1,0 +1,215 @@
+
+.Team {
+    position: fixed;
+    bottom: 10px; 
+    left: 10px;
+    font-size: 8px;
+}
+
+.Team h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /
+}
+
+.nav {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: #333; 
+    border-radius: 10px;
+    color: #fff;
+}
+
+.nav a {
+    display: inline-block;    
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav a:hover {
+    border-bottom: 4px solid #fff;
+    transition: .3s;
+}
+
+.search i {
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Imagenes/Itesa.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.home{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content .logo {
+    text-decoration: none;
+    color: #ff076e;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.content h2 {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.icon {
+    margin-top: 0px;
+}
+
+
+.login {
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.login h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 85%;
+    height: 40px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container input::placeholder {
+    color: #666;
+}
+
+
+
+.check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.check a {
+    margin-left: 10px;
+    color: #666;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(58, 58, 58, 0.521); 
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #555;
+}
+
+.sign-up {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background-color: rgba(122, 122, 122, 0.921); 
+    border-radius: 10px;
+}
+
+.sign-up a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    color: #c671ff;
+    
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+
+#google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: #dd4b39; /* Color de Google */
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio adicional */
+}
+
+#google-login img {
+    width: 20px; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+#google-login:hover {
+    background-color: #c1351f; /* Color de Google al pasar el mouse */
+}

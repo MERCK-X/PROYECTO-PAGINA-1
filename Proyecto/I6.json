@@ -1,0 +1,85 @@
+[
+    {
+        "_id": { "$oid": "64a311be4a2bf81adf5874e2" },
+        "correo": "tyllescas@itesa.edu.mx",
+        "nombre": "LIC. TONATIUTH YLLESCAS TREJO",
+        "periodos_Inst": {
+          "JULIO-DICIEMBRE-2023": {
+            "1G41,1G42": {
+              "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "1G41,1G42",
+              "Materia": "FUNDAMENTOS DE GESTIÓN EMPRESARIAL",
+              "totalTemas": "6",
+              "Semestre": "PRIMERO",
+              "ClaveAsignatura": "AEF1074"
+            },
+            "4G31": {
+              "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "4G31",
+              "Materia": "INSTRUMENTOS DE PRESUPUESTACION EMPRESARIAL",
+              "totalTemas": "5",
+              "Semestre": "CUARTO",
+              "ClaveAsignatura": "GED0917"
+            },
+            "7G41,7G42": {
+              "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "7G41,7G42",
+              "Materia": "GESTIÓN ESTRATÉGICA",
+              "totalTemas": "6",
+              "Semestre": "SÉPTIMO",
+              "ClaveAsignatura": "AED1035"
+            }
+          },
+          "ENERO-JUNIO-2024": {
+            "4G31": {
+              "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "4G31",
+              "Materia": "INSTRUMENTOS DE PRESUPUESTACION EMPRESARIAL",
+              "totalTemas": "5",
+              "Semestre": "CUARTO",
+              "ClaveAsignatura": "GED0917"
+            },
+            "4G32": {
+              "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "4G32",
+              "Materia": "INSTRUMENTOS DE PRESUPUESTACION EMPRESARIAL",
+              "totalTemas": "5",
+              "Semestre": "CUARTO",
+              "ClaveAsignatura": "GED0917"
+            },
+            "6G42": {
+              "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "6G42",
+              "Materia": "DISEÑO ORGANIZACIONAL",
+              "totalTemas": "6",
+              "Semestre": "SEXTO",
+              "ClaveAsignatura": "AED1015"
+            },
+            "8GM1": {
+              "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "8GM1",
+              "Materia": "FUNDAMENTOS DE LA INDUSTRIA 4.0",
+              "totalTemas": "4",
+              "Semestre": "OCTAVO",
+              "ClaveAsignatura": "TDE2301"
+            },
+            "8GM2": {
+              "Carrera": "INGENIERÍA EN GESTIÓN EMPRESARIAL",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "8GM2",
+              "Materia": "FUNDAMENTOS DE LA INDUSTRIA 4.0",
+              "totalTemas": "4",
+              "Semestre": "OCTAVO",
+              "ClaveAsignatura": "TDE2301"
+            }
+          }
+        }
+      }
+]

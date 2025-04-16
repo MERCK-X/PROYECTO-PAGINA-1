@@ -1,0 +1,49 @@
+[
+    {
+        "_id": { "$oid": "64a31ccde5c9a51da54f9192" },
+        "correo": "lsantos@itesa.edu.mx",
+        "nombre": "M. EN D. P. LAURA ELENA SANTOS DÍAZ",
+        "periodos_Inst": {
+          "JULIO-DICIEMBRE-2023": {
+            "5I41,5I42,5I43": {
+              "Carrera": "LICENCIATURA EN ADMINISTRACIÓN",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "5I41,5I42,5I43",
+              "Materia": "MACROECONOMÍA",
+              "totalTemas": "6",
+              "Semestre": "QUINTO",
+              "ClaveAsignatura": "AEC1077"
+            },
+            "7I51,7I52": {
+              "Carrera": "LICENCIATURA EN ADMINISTRACIÓN",
+              "Periodo": "JULIO-DICIEMBRE-2023",
+              "Grupo": "7I51,7I52",
+              "Materia": "ECONOMÍA INTERNACIONAL",
+              "totalTemas": "6",
+              "Semestre": "SÉPTIMO",
+              "ClaveAsignatura": "LAC1015"
+            }
+          },
+          "ENERO-JUNIO-2024": {
+            "6I51,6I52": {
+              "Carrera": "LICENCIATURA EN ADMINISTRACIÓN",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "6I51,6I52",
+              "Materia": "INNOVACIÓN Y EMPRENDEDURISMO",
+              "totalTemas": "4",
+              "Semestre": "SEXTO",
+              "ClaveAsignatura": "LAA1026"
+            },
+            "4I51,4I52,4I53": {
+              "Carrera": "LICENCIATURA EN ADMINISTRACIÓN",
+              "Periodo": "ENERO-JUNIO-2024",
+              "Grupo": "4I51,4I52,4I53",
+              "Materia": "ECONOMÍA EMPRESARIAL",
+              "totalTemas": "5",
+              "Semestre": "CUARTO",
+              "ClaveAsignatura": "LAD1014"
+            }
+          }
+        }
+      }   
+]
