@@ -20,12 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = '21030463@itesa.edu.mx'; // EL QUE ENVIA
-        $mail->Password   = 'Zv68KmzKQ'; // CONTRASEÑA DEL EL QUE ENVIA
+        $mail->Username   = 'x'; // EL QUE ENVIA
+        $mail->Password   = 'x'; // CONTRASEÑA DEL EL QUE ENVIA
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // o PHPMailer::ENCRYPTION_SMTPS para SSL
     	$mail->Port       = 587; // o 465 para SSL
 
-        $mail->setFrom('21030463@itesa.edu.mx', 'Clem'); // EL QUE ENVIA
+        $mail->setFrom('x', 'Clem'); // EL QUE ENVIA
         $mail->addAddress($email);
 
         $mail->Subject = 'Recuperación de Contraseña';
